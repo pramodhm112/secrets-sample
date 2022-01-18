@@ -4,11 +4,18 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_call:
+    inputs:
+      issue-key:
+        description: 'Issue Key'
+        required: true
+        type: string
+        
+#   # Triggers the workflow on push or pull request events but only for the main branch
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,5 +40,5 @@ jobs:
         id: transition
         uses: atlassian/gajira-transition@master
         with:
-          issue: ATP-9
+          issue: ${{ issue-key }}
           transition: "Done"
