@@ -39,5 +39,5 @@ jobs:
         id: transition
         uses: atlassian/gajira-transition@master
         with:
-          issue: ${{ issue-key }}
+          issue: ${{ github.event.inputs.issue-key }}
           transition: "Done"
