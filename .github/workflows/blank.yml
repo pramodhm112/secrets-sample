@@ -9,7 +9,6 @@ on:
       issue-key:
         description: 'Issue Key'
         required: true
-        type: string
         
 #   # Triggers the workflow on push or pull request events but only for the main branch
 #   push:
