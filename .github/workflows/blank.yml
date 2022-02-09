@@ -33,7 +33,7 @@ jobs:
         env:
           JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
           JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
-          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }} 
+          JIRA_API_TOKEN: 8TEHPLj90cOr3ClEPgVrD568
       - name: Transition issue
         id: transition
         uses: atlassian/gajira-transition@master
