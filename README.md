@@ -1,3 +1,4 @@
 # jira-sample-automation
 
-jfrog_123adsz
+AKIAIOSFODNN7EXAMPLE
+wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
